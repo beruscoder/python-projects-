@@ -13,8 +13,8 @@ class quiz:
     def question(self):
         for i, j in self.thisdict.items():
             print(i)
-            self.answer = input("Enter your answer: ").strip().lower()  # Convert input to lowercase
-            if self.answer == j.lower():  # Compare with lowercase dictionary value
+            self.answer = input("Enter your answer: ").strip().lower() 
+            if self.answer == j.lower(): 
                 self.marks += 1
         self.percentage = (self.marks / len(self.thisdict)) * 100
         print(f"Percentage: {self.percentage:.2f}%")
